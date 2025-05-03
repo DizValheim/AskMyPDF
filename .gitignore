@@ -1,0 +1,49 @@
+# General
+.DS_Store
+*.log
+*.env
+.env.*
+node_modules/
+__pycache__/
+*.pyc
+
+# Python venv
+venv/
+env/
+.venv/
+
+# React (frontend)
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+
+# Python bytecode
+*.pyo
+*.pyd
+
+# VSCode settings
+.vscode/
+
+# OS-specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Build outputs
+build/
+dist/
+
+# IDE files
+.idea/
+*.swp
+
+# Coverage/testing
+.coverage
+htmlcov/
+coverage.xml
+pytest_cache/
+
+# Others
+*.bak
+*.tmp
+*.orig
