@@ -10,13 +10,13 @@ function App() {
     const formData = new FormData();
     formData.append("file", file);
 
-    const res = await fetch(`${import.meta.env.VITE_API_URL}/upload-pdf`, {
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/upload-and-embed`, {
       method: 'POST',
       body: formData,
     });
 
     const data = await res.json();
-    setText(data.text);
+    setText(data.message);
   }
 
   return (
@@ -26,7 +26,7 @@ function App() {
         <button className="p-5 bg-blue-300 outline-1 outline-blue-400 rounded-xl text-2xl font-bold cursor-pointer" onClick={uploadPDF}>Upload</button>
       </div>
       <div className="mx-auto">
-        <div className="my-5 bg-blue-50 text-blue-300 rounded-xl"><pre className="p-5 text-wrap">{text || "No text to display..."}</pre></div>
+        <div className="my-5 bg-blue-50 text-gray-700 rounded-xl"><pre className="p-5 text-wrap">{text || "No text to display..."}</pre></div>
       </div>
     </div>
   );
