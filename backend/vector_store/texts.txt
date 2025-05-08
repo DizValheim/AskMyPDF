@@ -1,96 +1,58 @@
-[AMD Official Use Only - AMD Internal Distribution Only]
-Overview  
- 
-WHAT YOU DO AT AMD CHANGES EVERYTHING 
-We care deeply about transforming lives with AMD technology to enrich our industry, our 
-communities, and the world. Our mission is to build great products that accelerate next-
-generation computing experiences – the building blocks for the data center, artificial intelligence, 
-PCs, gaming and embedded. Underpinning our mission is the AMD culture. We push the limits
-of innovation to solve the world’s most important challenges. We strive for execution excellence 
-while being direct, humble, collaborative, and inclusive of diverse perspectives.  
-AMD together we advance . 
- 
-Below are the Skills for SW- : 
- 
-Common Skills: 
-• 
-Proficiency in C/C++ 
-• 
-Strong scripting skills (Python, Shell, Perl, TCL/TK, etc.) 
-• 
-Solid understanding of computer architecture, data structures & OS 
-AI/ML: 
-• 
-Good understanding of AI/ML 
-•
-AI/ML: 
-• 
-Good understanding of AI/ML 
-• 
-Experience with APIs like OpenGL, OpenCL, DirectX, Direct Compute 
-• 
-Knowledge of kernels, operating systems, and computer architecture 
-Architecture: 
-• 
-Cloud computing / Understanding of computing systems internals and data analysis 
-techniques 
-Compiler: 
-• 
-Experience in compiler design, LLVM/GCC compiler toolchain 
-FPGA: 
-• 
-Knowledge of FPGA microarchitectures and digital logic design fundamentals 
-• 
-Familiarity with deep-learning frameworks
-• 
-Familiarity with deep-learning frameworks 
-• 
-Programming and algorithmic skills in HDL 
-Software Development: 
-• 
-Understanding of cache subsystems, instruction set architecture, and CPU pipelines 
-• 
-Experience with Intel MKL libraries, linear algebra, FFT, x86 assembly programming, 
-and CPU profiling tools 
-• 
-QA background, ideally in the SWQA/PC/Games industry 
-• 
-Java, C#, Bash, PowerShell 
-• 
-Building/training models using PyTorch, TensorFlow, and TorchRL 
-•
-• 
-Knowledge of large language models, multimodal models, and computer vision 
-techniques 
-• 
-Experience with database interactions (SQL), Windows and Linux troubleshooting, and 
-CI workflows 
-• 
-Familiarity with GPU/CPU pipeline architecture and graphics rendering pipelines 
-• 
-Experience in web application development with frameworks like Angular or React 
-• 
-Proficiency in C#/.NET Core, HTML5, CSS, JavaScript, and TypeScript 
-•
-• 
-Knowledge of reporting/analytics tools like Power BI and REST API design 
-• 
-Familiarity with Unix/Linux internals, software version control systems (e.g., GIT, 
-Subversion) 
- 
-Bonus Skills: 
-• 
-Experience with Intel MKL libraries, linear algebra, FFT, x86 assembly programming, 
-and architecture-based optimizations 
- 
-[AMD Official Use Only - AMD Internal Distribution Only]
-• 
-Knowledge of EDA domain, digital design, and FPGA 
-•
-• 
-Understanding of performance bottlenecks and CPU profiling tools 
- 
-This role requires a versatile engineer with a broad skill set spanning multiple domains, 
-including AI/ML, computer architecture, compiler design, FPGA development, and software 
-engineering. The ideal candidate will have a strong foundation in programming, data structures, 
-and algorithms, along with specialized knowledge in various technologies and frameworks.
+DISHANT MOHAPATRA
+8249625160 • dishantmohapatrak20@gmail.com • Amla Club Lane, College Road, Puri, Odisha, 752001, India •
+LinkedIn • GitHub • LeetCode
+Summer Intern
+Motivated Software Developer with a strong foundation in Data Structures, Algorithms, and Object-Oriented
+Programming (OOP). Proficient in Java with experience in developing scalable web applications using React.js,
+Node.js, and PostgreSQL. Actively solve LeetCode problems using Java, continuously improving problem-solving
+skills and algorithmic thinking. Adept at designing efficient algorithms to solve complex problems and writing clean,
+maintainable code. Passionate about financial technology and enterprise solutions, with an eagerness to apply
+academic knowledge in real-world banking, financial services, and insurance (BFSI) software development. A
+strong team player with excellent problem-solving skills, attention to detail, and the ability to collaborate across cross-
+functional teams. Enthusiastic about innovation, integrity, and delivering high-quality software solutions in a fast-
+paced, growth-driven environment.
+Education
+ITER, Siksha 'O' Anusandhan - Odisha, Bhubaneswar, India, Bachelor of Technology in Computer Science
+Engineering, (GPA: 8.93), Nov 2022 - Mar 2025
+S.G.M., Puri, Odisha, Puri, India, Higher Secondary Education in Higher Secondary Certificate, (GPA: Percentage:
+87%), Sep 2020 - Jul 2022
+Certifications
+87%), Sep 2020 - Jul 2022
+Certifications
+Java(Basic) Certification by HackerRank, HackerRank
+Oct 2024
+Projects
+Forum Web Application, Link
+Jan 2025 - Mar 2025
+Designed and implemented a full-stack Q&A platform similar to Stack Overflow using React, Node.js, Express, and
+PostgreSQL.
+Developed a secure user authentication system using Passport.js with Google OAuth and Local Strategy.
+Engineered a RESTful API with pagination, sorting, and filtering for efficient question retrieval.
+Optimized database queries and schema design for efficient data retrieval and storage.
+Implemented state management and dynamic UI rendering using React and Vite.
+Simple Browser in FXML, Link
+Dec 2024 - Dec 2024
+Developed a lightweight web browser using JavaFX (FXML) with built-in navigation, zoom, and history
+tracking.
+Utilized JavaFX WebView and WebEngine to render web pages efficiently.
+Implemented navigation controls (Back, Forward, Refresh, Load Page) to enhance user experience.
+Integrated zooming functionality for better accessibility.
+Managed web history using WebHistory API to track visited pages.
+Set up a custom homepage (Google) and allowed dynamic URL input via TextField.
+Strengthened problem-solving and UI/UX design skills while working with JavaFX and event-driven
+programming.
+Core Competencies
+Programming Languages
+Java, C, C#, HTML, CSS, JavaScript
+Version Control
+Git, GitHub
+Development Tools
+VS Code, IntelliJ
+Frameworks and APIs
+VS Code, IntelliJ
+Frameworks and APIs
+Express, React, Node, REST-APIs
+Databases
+PostgreSQL, Oracle
+Interests
+Software Development, Programming Language, Information Technology
