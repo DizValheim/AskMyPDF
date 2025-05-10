@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import Search from "./components/Search";
+import Ask from "./components/Ask";
+import logo from "./assets/AskMyPDF_logo.png"
+import DropZone from "./components/DropZone";
 
 function App() {
   const [file, setFile] = useState(null)
@@ -23,16 +26,26 @@ function App() {
   
 
   return (
-    <div className="min-h-dvh bg-blue-200 flex flex-col justify-center">
-      <div className="mx-auto text-white flex flex-col">
-        <input className="p-5 my-5 bg-blue-300 rounded-xl outline-2 outline-dashed outline-blue-400 cursor-pointer" type="file" accept="application/pdf" onChange={(e) => setFile(e.target.files[0])} />
-        <button className="p-5 bg-blue-400 outline-1 outline-blue-400 rounded-xl text-2xl font-bold cursor-pointer" onClick={uploadPDF}>Upload</button>
-      </div>
-      <div className="mx-auto">
-        <div className="my-5 bg-blue-50 text-gray-700 rounded-xl"><pre className="p-5 text-wrap">{text || "No text to display..."}</pre></div>
-      </div>
-      <div className="mx-auto">
-        <Search />
+    <div className="min-h-dvh bg-[#1b1d1e] flex flex-col justify-center">
+      <nav className="fixed top-0 p-3 px-20 w-full flex justify-between">
+          <div><img className="" src={logo} alt="logo"  width={200}/></div>
+          <div className="my-4"><a className="text-2xl font-bold text-[#dfd0b8] align-middle" href="">About⌝</a></div>
+      </nav>
+
+      <div className="min-h-[calc(100dvh-88px)] mt-22 grid grid-cols-2">
+        <div className="flex flex-col justify-center">
+            <div className="h-1/2 w-3/4 mx-auto text-center">
+              <h1 className="my-2 text-3xl font-bold text-[#dfd0b8]">Upload any PDF document to begin </h1>
+              <p className="my-2 text-xl font-bold text-[#948979]"> our intelligent assistant will process its contents and let you interact with it through natural language questions.</p>
+              <DropZone />
+            </div>
+        </div>
+        <div className="absolute left-1/2 top-50 w-0.5 h-150 rounded-full bg-[#dfd0b850]"></div>
+        <div className="flex flex-col justify-center">
+          <div className="h-6/7 w-2/3 mx-auto bg-[#94897910] rounded-2xl shadow-in">
+            
+          </div>
+        </div>
       </div>
     </div>
   );

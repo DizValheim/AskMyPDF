@@ -4,6 +4,7 @@ import fitz
 from utils import pdf_to_text_chunks
 from embedding_store import embed_and_store, load_index_and_text, search
 from pydantic import BaseModel
+import ollama
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -48,3 +49,30 @@ def search_pdf(req: SearchRequest):
         return {"results" : results}
     except Exception as e:
         return {"error" : str(e)}
+    
+@app.post("/api/ask")
+def ask_question(req: SearchRequest):
+    try:
+        retrieved_chunks = search(req.query, req.top_k)
+        prompt = f""" Use the following context to answer the question:
+        {retrieved_chunks}
+
+        Question: {req.query}
+        """
+
+        response = ollama.chat(
+            model="mistral",
+            messages=[
+                {"role": "system", "content": "You are a helpful PDF assistant."},
+                {"role": "user", "content": prompt}
+            ]
+        )
+        answer = response["message"]["content"]
+
+        return {"answer" : answer}
+
+    except Exception as e:
+        return {"error" : str(e)}
+    
+
+        

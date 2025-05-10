@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+.shadow-in {
+  border-radius: 50px;
+  background: #1b1d1e;
+  box-shadow: inset 30px 30px 34px #161718,
+            inset -30px -30px 34px #202324;
+}
+
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
