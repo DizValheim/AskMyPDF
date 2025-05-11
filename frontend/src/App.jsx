@@ -30,7 +30,7 @@ function App() {
     <div className="min-h-dvh bg-[#1b1d1e] flex flex-col justify-center">
       <nav className="fixed top-0 p-3 px-20 w-full flex justify-between">
           <div><img className="" src={logo} alt="logo"  width={200}/></div>
-          <div className="my-4"><a className="text-2xl font-bold text-[#dfd0b8] align-middle" href="">About⌝</a></div>
+          <div className="my-4"><a className="text-2xl font-bold text-[#dfd0b8] align-middle" href="https://github.com/DizValheim/AskMyPDF" target="blank">About⌝</a></div>
       </nav>
 
       <div className="min-h-[calc(100dvh-88px)] mt-22 grid grid-cols-2">
