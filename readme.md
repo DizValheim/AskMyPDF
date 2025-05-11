@@ -10,7 +10,7 @@ AskMyPDF is a full-stack application that lets you upload a PDF and ask question
 - Chunk and embed the PDF using `sentence-transformers` (`all-MiniLM-L6-v2`)
 - Store embeddings in FAISS vector index
 - Query the document using semantic search
-- 🔥 (Optional) Get full sentence answers using **Ollama** LLMs locally
+- Get full sentence answers using **Ollama** LLMs locally
 - React frontend with real-time search and upload UI
 
 ---
