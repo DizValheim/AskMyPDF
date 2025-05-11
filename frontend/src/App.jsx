@@ -3,6 +3,7 @@ import Search from "./components/Search";
 import Ask from "./components/Ask";
 import logo from "./assets/AskMyPDF_logo.png"
 import DropZone from "./components/DropZone";
+import Chat from "./components/Chat";
 
 function App() {
   const [file, setFile] = useState(null)
@@ -43,7 +44,7 @@ function App() {
         <div className="absolute left-1/2 top-50 w-0.5 h-150 rounded-full bg-[#dfd0b850]"></div>
         <div className="flex flex-col justify-center">
           <div className="h-6/7 w-2/3 mx-auto bg-[#94897910] rounded-2xl shadow-in">
-            
+            <Chat />
           </div>
         </div>
       </div>

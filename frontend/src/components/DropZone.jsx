@@ -3,6 +3,8 @@ import { useRef, useState } from "react";
 export default function DropZone() {
   const [pdfFile, setPdfFile] = useState(null);
   const [dragging, setDragging] = useState(false);
+  const [analyzing, setAnalyzing] = useState(false);
+  const [analyzed, setAnalyzed] = useState(false)
   const fileInputRef = useRef(null);
 
   function handleDragOver(event) {
@@ -51,12 +53,14 @@ export default function DropZone() {
 
     const formData = new FormData();
     formData.append("file", pdfFile);
-
+    setAnalyzing(true);
     const res = await fetch(`${import.meta.env.VITE_API_URL}/upload-and-embed`, {
       method: 'POST',
       body: formData,
     });
 
+    setAnalyzing(false);
+    setAnalyzed(true);
     const data = await res.json();
     setText(data.message);
   }
@@ -82,7 +86,7 @@ export default function DropZone() {
             <p className="mt-2 text-xl text-[#dfd0b8]">{pdfFile? `Uploaded: ${pdfFile.name}` : "Click or drag and drop your PDF here"}</p>
         </div>
       </div>
-        <button className="w-9/10 p-5 bg-[#948979] rounded-xl text-[#dfd0b8] text-2xl font-bold cursor-pointer" onClick={uploadPDF}>Upload</button>
+        <button className={`w-9/10 p-5 bg-[#948979] rounded-xl text-[#dfd0b8] text-2xl font-bold cursor-pointer ${analyzing && "animate-pulse"}`} onClick={uploadPDF}>{analyzing ? "Analyzing..." : (analyzed ? "Analyzed!" : "Analyze")}</button>
     </>
   );
 }
