@@ -1,29 +1,9 @@
 import { useEffect, useState } from "react";
-import Search from "./components/Search";
-import Ask from "./components/Ask";
 import logo from "./assets/AskMyPDF_logo.png"
 import DropZone from "./components/DropZone";
 import Chat from "./components/Chat";
 
 function App() {
-  const [file, setFile] = useState(null)
-  const [text, setText] = useState("")
-
-  async function uploadPDF() {
-    if(!file) return alert("Please Choose a file!");
-
-    const formData = new FormData();
-    formData.append("file", file);
-
-    const res = await fetch(`${import.meta.env.VITE_API_URL}/upload-and-embed`, {
-      method: 'POST',
-      body: formData,
-    });
-
-    const data = await res.json();
-    setText(data.message);
-  }
-
   
 
   return (
@@ -43,7 +23,7 @@ function App() {
         </div>
         <div className="absolute left-1/2 top-50 w-0.5 h-150 rounded-full bg-[#dfd0b850]"></div>
         <div className="flex flex-col justify-center">
-          <div className="h-6/7 w-2/3 mx-auto bg-[#94897910] rounded-2xl shadow-in">
+          <div className="relative h-6/7 w-2/3 mx-auto bg-[#94897910] rounded-2xl shadow-in">
             <Chat />
           </div>
         </div>
