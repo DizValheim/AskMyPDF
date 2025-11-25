@@ -11,12 +11,20 @@ stored_text = []
 
 def embed_and_store(chunks: List[str]) -> int:
     global index, stored_text
+
+    if os.path.exists("vector_store/faiss.index"):
+        os.remove("vector_store/faiss.index")
+    if os.path.exists("vector_store/text.txt"):
+        os.remove("vector_store/text.txt")
+
+    index = None
+    stored_text = []
     
     embeddings = model.encode(chunks, convert_to_numpy=True)
 
-    if index is None:
-        dim = embeddings.shape[1]
-        index = faiss.IndexFlatL2(dim)
+    
+    dim = embeddings.shape[1]
+    index = faiss.IndexFlatL2(dim)
 
     index.add(embeddings)
     stored_text.extend(chunks)
