@@ -38,7 +38,7 @@ export default function Chat() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ query: userText, top_k: 5 }),
+        body: JSON.stringify({ query: userText, top_k: 10 }),
       });
       const data = await res.json();
       console.log(data);
@@ -99,7 +99,7 @@ export default function Chat() {
         <div ref={messagesEndRef} />
       </div>
       <div className="z-5 absolute bottom-0 w-full h-20 left-1/2 rounded-b-[2.3vw] transform -translate-x-1/2 bg-linear-180 from-0% from-[#94897901] via-80% via-[#94897940] to-[#94897960]"></div>
-      <div className="z-10 absolute bottom-3 w-full left-1/2 transform -translate-x-1/2 flex items-center text-[#1b1d1e]">
+      <div className="z-10 absolute bottom-3 w-full left-1/2 transform -translate-x-1/2 flex items-center text-amber-100">
         <input
           className="p-5 mr-2 ml-auto w-100 bg-[#94897901] rounded-full font-bold border-3 border-t-[#EEEEEE40] border-s-[#EEEEEE40] border-b-[#99999940] border-e-[#99999940] outline-none backdrop-blur-xs"
           type="text"
@@ -109,7 +109,7 @@ export default function Chat() {
           placeholder={isTyping ? "Loading..." : "Ask..."}
         />
         <button
-          className="p-5 mr-auto h-15 w-15 bg-[#dfd0b801] border-3 border-t-[#EEEEEE40] border-s-[#EEEEEE40] border-b-[#99999940] border-e-[#99999940] text-amber-100 backdrop-blur-2xl rounded-full cursor-pointer flex items-center justify-center"
+          className="p-5 mr-auto h-15 w-15 bg-[#dfd0b801] border-3 border-t-[#EEEEEE40] border-s-[#EEEEEE40] border-b-[#99999940] border-e-[#99999940] backdrop-blur-2xl rounded-full cursor-pointer flex items-center justify-center"
           onClick={ask}
         >
           <span className="-rotate-45">➤</span>
